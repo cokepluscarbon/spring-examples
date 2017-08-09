@@ -10,5 +10,10 @@ public class BasicController {
     public String welcome() {
         return "Hello World!";
     }
+    
+    @GetMapping("/welcome-with-object")
+    public WelcomeBean welcomeWithObject() {
+      return new WelcomeBean("Hello World");
+    }
 
 }
